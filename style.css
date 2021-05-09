@@ -1,0 +1,97 @@
+body{
+    background: #282828;
+    margin:20px;
+
+
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#modal {
+    border-radius: 4px;
+    padding: 100px;
+    background: white;
+    display: block;    
+    border: 4px;   
+    box-shadow: 0 1px 1px rgba(0,0,0, .1); 
+    max-width: 400px;
+    margin: 20px auto;
+    animation: modal .5s forwards;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-50px,0);
+    }
+    to{
+   opacity:1;
+   transform: translate3d(0,0,0);
+    }
+
+}
+#modal h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0px 0px 20px;
+    color: #84e;
+}
+#modal label{
+    color: #222;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#modal input {
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: .5rem;
+    font-size: 1rem;
+    background: #222;
+    color: white;
+}
+#calcular {
+display: block;
+text-align: center;
+margin: 20px auto;
+font-family: sans-serif;
+font-size: 1rem;
+padding: 10px;
+border: none;
+background: #84e;
+border-radius: 4px;
+color: white;
+font-weight: bold;
+width: 200px;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+
+}
+#calcular:hover{
+    background: #282828;
+}
+#resultado{
+    display: flex;
+  margin: 20px auto;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  font: italic 1.5rem serif;
+  background: #222;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
